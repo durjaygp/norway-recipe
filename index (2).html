@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middags Tips - Fast and Simple Dinner Ideas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .recipe-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .recipe-card:hover {
+            transform: translateY(-2px);
+        }
+        .filter-btn:hover {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <!-- Header -->
+    <header class="border-b border-gray-200 bg-white">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
+            <div class="flex items-center gap-2">
+                <div class="h-5 w-5 rounded-full bg-orange-400"></div>
+                <a href="#" class="text-lg font-medium text-blue-700">Middags Tips</a>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8">
+                    <li><a href="#" class="text-sm font-medium text-gray-900">Fast and simple</a></li>
+                    <li><a href="#" class="text-sm font-medium text-gray-700">Healthy and Cheap</a></li>
+                    <li><a href="#" class="text-sm font-medium text-gray-700">Advanced</a></li>
+                    <li><a href="#" class="text-sm font-medium text-gray-700">Cheat meal</a></li>
+                    <li><a href="#" class="text-sm font-medium text-red-500">Week deals</a></li>
+                </ul>
+            </nav>
+            <button class="flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm hover:bg-gray-50">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5-6m0 0L4 5M7 13h10m0 0l1.5 6M17 13l1.5-6"></path>
+                </svg>
+                Handleliste
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mx-auto max-w-7xl px-6">
+        <!-- Hero Section -->
+        <div class="py-12 text-center">
+            <h1 class="mb-3 text-5xl font-bold text-gray-900">Fast and simple dinner ideas</h1>
+            <p class="text-lg text-gray-600">500 dinner ideas under 30 minutes!</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mx-auto mb-8 max-w-2xl">
+            <div class="relative">
+                <input
+                    type="text"
+                    placeholder="Search for specific recipe"
+                    class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 pr-12 text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+                <svg class="absolute right-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Quick Filters -->
+        <div class="mb-10 flex flex-wrap items-center gap-3">
+            <span class="text-sm font-medium text-gray-900">Quick filter :</span>
+            <button class="filter-btn rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">Under 15 min</button>
+            <button class="filter-btn rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">Under 20 min</button>
+            <button class="filter-btn rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">Meat</button>
+            <button class="filter-btn rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">Fish</button>
+            <button class="filter-btn rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">Vegetar</button>
+            <button class="filter-btn rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">Pasta</button>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 gap-8 pb-12 lg:grid-cols-4">
+            <!-- Sidebar -->
+            <div class="space-y-8">
+                <div>
+                    <h2 class="mb-4 text-xl font-bold text-gray-900">Type of food</h2>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Pasta</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Pizza</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Chicken</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Fish</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Wraps</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Salater</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="mb-4 text-xl font-bold text-gray-900">Kosthold</h2>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Vegetar</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Vegansk</a></li>
+                        <li><a href="#" class="text-base text-gray-900 hover:text-blue-600">Lavkarbo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Recipe Grid -->
+            <div class="col-span-3 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Recipe Card 1 - Pasta med pesto -->
+                <div class="recipe-card overflow-hidden rounded-lg bg-white shadow-sm cursor-pointer">
+                    <div class="relative h-48 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop&crop=center"
+                            alt="Pasta med pesto"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="mb-3 text-lg font-semibold text-gray-900">Pasta med pesto</h3>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>15 min</span>
+                            <span>Vegetar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2 - Tacokjøttdeig -->
+                <div class="recipe-card overflow-hidden rounded-lg bg-white shadow-sm cursor-pointer">
+                    <div class="relative h-48 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&crop=center"
+                            alt="Tacokjøttdeig"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="mb-3 text-lg font-semibold text-gray-900">Tacokjøttdeig</h3>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>20 min</span>
+                            <span>Kjøtt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3 - Pasta med pesto (duplicate) -->
+                <div class="recipe-card overflow-hidden rounded-lg bg-white shadow-sm cursor-pointer">
+                    <div class="relative h-48 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop&crop=center"
+                            alt="Pasta med pesto"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="mb-3 text-lg font-semibold text-gray-900">Pasta med pesto</h3>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>15 min</span>
+                            <span>Vegetar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 4 - Tacokjøttdeig (duplicate) -->
+                <div class="recipe-card overflow-hidden rounded-lg bg-white shadow-sm cursor-pointer">
+                    <div class="relative h-48 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&crop=center"
+                            alt="Tacokjøttdeig"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="mb-3 text-lg font-semibold text-gray-900">Tacokjøttdeig</h3>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>20 min</span>
+                            <span>Kjøtt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 5 - Laks med grønnsaker -->
+                <div class="recipe-card overflow-hidden rounded-lg bg-white shadow-sm cursor-pointer">
+                    <div class="relative h-48 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop&crop=center"
+                            alt="Laks med grønnsaker"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="mb-3 text-lg font-semibold text-gray-900">Laks med grønnsaker</h3>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>25 min</span>
+                            <span>Fisk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 6 - Curry med ris -->
+                <div class="recipe-card overflow-hidden rounded-lg bg-white shadow-sm cursor-pointer">
+                    <div class="relative h-48 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop&crop=center"
+                            alt="Curry med ris"
+                            class="h-full w-full object-cover"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="mb-3 text-lg font-semibold text-gray-900">Curry med ris</h3>
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>30 min</span>
+                            <span>Vegetar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Add basic interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search functionality
+            const searchInput = document.querySelector('input[type="text"]');
+            searchInput.addEventListener('input', function(e) {
+                console.log('Searching for:', e.target.value);
+                // Add search logic here
+            });
+
+            // Filter button functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('bg-blue-100', 'text-blue-700'));
+                    // Add active class to clicked button
+                    this.classList.add('bg-blue-100', 'text-blue-700');
+                    console.log('Filter selected:', this.textContent);
+                });
+            });
+
+            // Recipe card click functionality
+            const recipeCards = document.querySelectorAll('.recipe-card');
+            recipeCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const recipeName = this.querySelector('h3').textContent;
+                    console.log('Recipe clicked:', recipeName);
+                    // Add recipe detail modal or navigation here
+                });
+            });
+
+            // Sidebar navigation
+            const sidebarLinks = document.querySelectorAll('aside a, .space-y-8 a');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Category selected:', this.textContent);
+                    // Add category filtering logic here
+                });
+            });
+        });
+    </script>
+</body>
+</html>
